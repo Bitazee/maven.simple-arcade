@@ -14,7 +14,7 @@ public class NumberGuessPlayer implements PlayerInterface {
         currentPlayer = player;
     }
     @Override
-    public ArcadeAccount getArcadeAccount() {
+    public ArcadeAccount getArcadeAccount(){
         return currentPlayer;
     }
 

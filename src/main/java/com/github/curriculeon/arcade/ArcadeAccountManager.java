@@ -2,6 +2,7 @@ package com.github.curriculeon.arcade;
 
 import javafx.scene.shape.Arc;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -11,7 +12,7 @@ import java.util.List;
  */
 public class ArcadeAccountManager{
 
-    private List<ArcadeAccount> accountList;
+    private List<ArcadeAccount> accountList = new ArrayList<>();
     /**
      * @param accountName name of account to be returned
      * @param accountPassword password of account to be returned
