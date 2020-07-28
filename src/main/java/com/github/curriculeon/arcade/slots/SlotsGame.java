@@ -8,8 +8,15 @@ import com.github.curriculeon.arcade.PlayerInterface;
  */
 public class SlotsGame implements GameInterface {
 
-
     //DATA STUFF
+    enum Symbols{
+        Bar,
+        Lemon,
+        Cherry,
+        Grape,
+        Watermelon,
+        Seven,
+    }
 
 
     @Override

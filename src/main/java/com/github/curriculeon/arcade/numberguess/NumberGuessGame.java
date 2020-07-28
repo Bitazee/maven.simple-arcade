@@ -21,6 +21,6 @@ public class NumberGuessGame implements GameInterface {
 
     @Override
     public void run() {
-
+        //Game Logic here
     }
 }

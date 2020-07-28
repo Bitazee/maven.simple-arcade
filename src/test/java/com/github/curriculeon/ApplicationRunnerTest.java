@@ -20,17 +20,4 @@ public class ApplicationRunnerTest {
         // then
         Assert.assertNotNull(runnable.toString());
     }
-    @Test
-    public void AccountCreationTest(){
-        ArcadeAccountManager arcadeAccountManager = new ArcadeAccountManager();
-
-        ArcadeAccount newAccount = arcadeAccountManager.createAccount("Marcus","Password");
-
-        arcadeAccountManager.registerAccount(newAccount);
-
-        ArcadeAccount searchAccount = arcadeAccountManager.getAccount("Marcus", "Password");
-
-        Assert.assertEquals(searchAccount, newAccount);
-
-    }
 }

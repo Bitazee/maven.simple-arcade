@@ -27,7 +27,7 @@ public class Arcade implements Runnable {
                 String accountName = console.getStringInput("Enter your account name:");
                 String accountPassword = console.getStringInput("Enter your account password:");
                 ArcadeAccount arcadeAccount = arcadeAccountManager.getAccount(accountName, accountPassword);
-                boolean isValidLogin = arcadeAccount != null;
+                boolean isValidLogin = (arcadeAccount != null);
                 if (isValidLogin) {
                     String gameSelectionInput = getGameSelectionInput().toUpperCase();
                     if (gameSelectionInput.equals("SLOTS")) {
@@ -42,7 +42,7 @@ public class Arcade implements Runnable {
                 } else {
                     // TODO - implement better exception handling
                     String errorMessage = "No account found with name of [ %s ] and password of [ %s ]";
-                    throw new RuntimeException(String.format(errorMessage, accountPassword, accountName));
+                    throw new RuntimeException(String.format(errorMessage, accountName, accountPassword));
                 }
             } else if ("create-account".equals(arcadeDashBoardInput)) {
                 console.println("Welcome to the account-creation screen.");
